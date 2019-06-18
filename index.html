@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Radley&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-index.css">
+    <title>cinema</title>
+</head>
+
+<body>
+
+    <!-- Header section -->
+
+    <section class="header" id="header">
+    </section>
+    <div class="header-container">
+        <i class="fas fa-film"></i>
+        <h1>cinema</h1>
+    </div>
+
+    <!-- City section -->
+
+    <section class="city container" id="city">
+
+        <div class="row">
+            <div class="col-12">
+                <div id="cityselect">
+                    <h2>Select a city</h2>
+                    <select id="citSelect" onchange="selectCity()">
+                    </select>
+                    <p id="demo"></p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Booking section -->
+
+    <section class="booking container hidden" id="booking">
+        <div class="row">
+            <div class="col-12">
+                <h2 id="h2-movie">Select a movie</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6" id="movie">
+                <h3>Movie</h3>
+                <ul id="moviesList">
+                </ul>
+            </div>
+            <div class="col-6" id="hours">
+                <h3>Hour</h3>
+                <ul id="hoursList">
+                </ul>
+            </div>
+        </div>
+
+        <div class="row hidden" id="screen-room">
+            <div class="col-12">
+                <h2>Select a seat</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div id="screen" class="screen hidden">
+                    Screen
+                </div>
+                <div id="theater">
+                </div>
+            </div>
+        </div>
+
+<!-- Payment section -->
+
+        <div class="row hidden" id="payment">
+            <div class="col-12">
+                <div class="cost-summary">
+                    <h3>Cost summary</h3>
+                    <input id="cost">
+                    <button id="button-pay">Payment</button>
+                </div>
+        </div>
+        </div>
+
+    </section>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
