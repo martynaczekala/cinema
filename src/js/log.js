@@ -18,7 +18,7 @@ var re1 = new RegExp(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!
     }
 
     if (found && isValid) {
-        open("index.html", "_self");
+        open("./index.html", "_self");
        //Open the booking panel
     } else {
         alert("The user name or password is incorrect. Try again.")

@@ -1,0 +1,77 @@
+$color_1: white;
+$color_2: grey;
+$color_3: lightgray;
+$font_family_1: 'Source Sans Pro', sans-serif;
+
+html {
+	scroll-behavior: smooth;
+	height: 100%;
+}
+body {
+	scroll-behavior: smooth;
+	height: 100%;
+}
+* {
+	box-sizing: border-box;
+}
+.bg-image {
+	background-image: url(../img/felix-mooneeram.jpg);
+	filter: blur(8px);
+	-webkit-filter: blur(8px);
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.log-panel {
+	color: $color_1;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	padding: 20px;
+	text-align: center;
+	font-family: $font_family_1;
+}
+input {
+	padding: 4px 20px;
+	border-radius: 5px;
+	width: 30vh;
+	height: 4vh;
+	background: transparent;
+	color: $color_1;
+	font-size: 90%;
+	&:hover {
+		color: $color_3;
+		border: 1px solid $color_3;
+	}
+}
+button {
+	width: 30vh;
+	height: 4vh;
+	border-radius: 5px;
+	border: 0px;
+	color: $color_2;
+	font-family: $font_family_1;
+	font-weight: 400;
+	font-size: 90%;
+	text-align: center;
+	line-height: initial;
+	&:hover {
+		background: $color_3;
+	}
+}
+div {
+	.input {
+		padding: 10px 20px;
+	}
+}
+.div-psw {
+	padding: 10px 20px;
+}
+i {
+	color: $color_1;
+	font-size: 10vh;
+	padding: 10px;
+}

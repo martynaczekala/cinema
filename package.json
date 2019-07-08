@@ -1,0 +1,22 @@
+{
+  "name": "cinema",
+  "version": "1.0.0",
+  "description": "cinema-site",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martynaczekala/cinema.git"
+  },
+  "author": "mcz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martynaczekala/cinema/issues"
+  },
+  "homepage": "https://github.com/martynaczekala/cinema#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^4.35.2"
+  }
+}
